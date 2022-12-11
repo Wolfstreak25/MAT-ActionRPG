@@ -19,12 +19,27 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         if(movementInput != Vector2.zero){
-            int count = rb.Cast(movementInput,movementFilter,castCollisions,moveSpeed* Time.fixedDeltaTime + collisionOffset);
-            if(count == 0){
-                rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+            bool isOnMove = isMoving(movementInput);
+            if(!isOnMove){
+                isOnMove = isMoving(new Vector2(movementInput.x, 0));
+                if(!isOnMove){
+                    isOnMove = isMoving(new Vector2(0, movementInput.y));
+                }
             }
         }
         
+    }
+    private bool isMoving (Vector2 direction) {
+        {
+            int count = rb.Cast(direction,movementFilter,castCollisions,moveSpeed* Time.fixedDeltaTime + collisionOffset);
+            if(count == 0){
+                rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     }
     void OnMove(InputValue movementvalue)
     {
