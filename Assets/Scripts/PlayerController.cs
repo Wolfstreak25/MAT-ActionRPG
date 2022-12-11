@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
+    public SwordAttack SwordHit;
+    bool canMove = true;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     void Start()
     {
@@ -22,7 +24,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(movementInput != Vector2.zero){
+        if(canMove){
+            if(movementInput != Vector2.zero){
             bool isOnMove = isMoving(movementInput);
             if(!isOnMove){
                 isOnMove = isMoving(new Vector2(movementInput.x, 0));
@@ -30,11 +33,22 @@ public class PlayerController : MonoBehaviour
             if(!isOnMove){
                 isOnMove = isMoving(new Vector2(0, movementInput.y));
             }
-            animator.SetFloat("Speed", moveSpeed);
+            animator.SetBool("IsMoving", isOnMove);
             
-        }
-        else{
-            animator.SetFloat("Speed", 0f);
+            }
+            else{
+                animator.SetBool("IsMoving", false);
+            }
+
+            if(movementInput.x < 0){
+                SwordHit.attackDirection = AttackDirection.Left;
+            }else if(movementInput.x > 0){
+                SwordHit.attackDirection = AttackDirection.Right;
+            }else if(movementInput.y > 0){
+                SwordHit.attackDirection = AttackDirection.Up;
+            }else if(movementInput.y < 0){
+                SwordHit.attackDirection = AttackDirection.Down;
+            }
         }
         
     }
@@ -65,6 +79,17 @@ public class PlayerController : MonoBehaviour
     }
     void OnFire()
     {
-
+        animator.SetTrigger("Attack");
     }
+    public void MovementLocked()
+    {
+        canMove = false;
+        SwordHit.Attack();
+    }
+    public void MovementUnLocked()
+    {
+        canMove = true;
+        SwordHit.StopAttack();
+    }
+
 }
