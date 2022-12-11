@@ -1,0 +1,1071 @@
+fileFormatVersion: 2
+guid: 11a48fdc7d4af1d48b3cfe4b99f9aced
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 233
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defd7fb752a519b409754f921d56f2e3
+      internalID: -846286611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 227
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cb0ab442533754eb88e345d6ed17f2
+      internalID: 1971037566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 236
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83e3af2a1e3752418af7ae8352bdd6d
+      internalID: 1197781578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 231
+        width: 104
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a77748100eda409de31c09c1c581f
+      internalID: 1400592545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 166
+        width: 61
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64518acc65626c9438550b6c4a53cc3f
+      internalID: -1451482341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 169
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c72b015f11b1243a682ab62e0a6b8a
+      internalID: -1110107180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 169
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff5ce0d8a766a147b9114a33817b6c6
+      internalID: 1672288907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_7
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 164
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4a1291a4292ff489da56c70ddd8dce
+      internalID: 824414398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 167
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7607077c4178a3e4eaf13862b23cd65b
+      internalID: 1711965890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 166
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47345ce5923755344afacc2067cf0feb
+      internalID: -1566446561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 164
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5814bb50dd637d4da8187bc43c05b84
+      internalID: -893737300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 107
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d769cc1f1ddbed445bd3847b216a90e1
+      internalID: 52294571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 108
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff32f69b44fb31f49b6d1cf0c3110781
+      internalID: -1869132170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716d59fd91182642a40787795dea49d
+      internalID: -870261728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_14
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 113
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0524293f4a2c4ae4698b472fbc6c6194
+      internalID: 1589321153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_15
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 142
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944711c8e9c2d640924a99a93c4cc84
+      internalID: -302324962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_16
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 139
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c04470999d78b3458b5197276c235ed
+      internalID: 1307218420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 120
+        width: 65
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742161f0f5d4e1342955e45e3e3adb54
+      internalID: -1539349427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_18
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 109
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775a1ac35ff395a48b0fd02ad7ee9179
+      internalID: 251808571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_19
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 109
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2993650b297dc843ab6ab1afef087fc
+      internalID: 936836017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_20
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 109
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ad61f884bb4424ab6139dfdc06dd36
+      internalID: 1455426180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_21
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d8aacf99715a8428c8e7ddb7917966
+      internalID: -622684927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_22
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 109
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9b7f23032d4624e8bf7b35f736a0be
+      internalID: -656353081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 98
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8cddad4f14dd543a083fb33f9a94ea
+      internalID: -903279978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_24
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 96
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6c9b09895e76d4e8f94307da9f9565
+      internalID: 858312413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_25
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 98
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afdf25d83d4a47488f65de623dcc91f
+      internalID: 1842799084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5156db9bd4d924c9a61c90fc20f022
+      internalID: 1715212891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_27
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 98
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3788566e80d66d141b917c17c101ee4b
+      internalID: -1277777562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_28
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 98
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8a2464dfbf2f3428aa32720afa4a7f
+      internalID: 751414749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_29
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 98
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf227b3af9d9c84d8f2f0aa2b2bcc35
+      internalID: 526679962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_30
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 98
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693d9a0d31883614abb229d7d57daa28
+      internalID: -1480285142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_31
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 59
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccc08fe960f6514da56c3fb88ef6457
+      internalID: 2039388772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_32
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 66
+        width: 48
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583b07a71bd242c45864c500e7475f84
+      internalID: 648208079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_33
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 63
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88b9955f6c4f4b4189240801cb2933a
+      internalID: 394061314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_34
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 60
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee85d01dcc3dc94cbe98db225ac5968
+      internalID: -448317166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_35
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 26
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39133a311ebe5b469f5785e8c6d3948
+      internalID: 1504929045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aab505c594f1174793b1af2d2ff1995
+      internalID: -1787280219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_37
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd8b4f1b1983ab4bbc2f8f5a1979c57
+      internalID: -1190186907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_38
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09593676b31b72940bede13fbb7145b7
+      internalID: 1491818728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_39
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 3
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd8bfda2d7dcfc4795f08d5e83efc49
+      internalID: 935472991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_40
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9f014e00b9fd548a6c840a4b8bd277
+      internalID: -1096825720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake img set - Copy (2)_41
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 3
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddecefb3608b1e4db12cbf88ef666f9
+      internalID: -2060577929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Snake img set - Copy (2)_20: 1455426180
+      Snake img set - Copy (2)_19: 936836017
+      Snake img set - Copy (2)_25: 1842799084
+      Snake img set - Copy (2)_2: 1197781578
+      Snake img set - Copy (2)_32: 648208079
+      Snake img set - Copy (2)_34: -448317166
+      Snake img set - Copy (2)_11: 52294571
+      Snake img set - Copy (2)_16: 1307218420
+      Snake img set - Copy (2)_1: 1971037566
+      Snake img set - Copy (2)_27: -1277777562
+      Snake img set - Copy (2)_21: -622684927
+      Snake img set - Copy (2)_0: -846286611
+      Snake img set - Copy (2)_39: 935472991
+      Snake img set - Copy (2)_13: -870261728
+      Snake img set - Copy (2)_22: -656353081
+      Snake img set - Copy (2)_24: 858312413
+      Snake img set - Copy (2)_33: 394061314
+      Snake img set - Copy (2)_10: -893737300
+      Snake img set - Copy (2)_12: -1869132170
+      Snake img set - Copy (2)_15: -302324962
+      Snake img set - Copy (2)_6: 1672288907
+      Snake img set - Copy (2)_37: -1190186907
+      Snake img set - Copy (2)_4: -1451482341
+      Snake img set - Copy (2)_28: 751414749
+      Snake img set - Copy (2)_18: 251808571
+      Snake img set - Copy (2)_7: 824414398
+      Snake img set - Copy (2)_9: -1566446561
+      Snake img set - Copy (2)_14: 1589321153
+      Snake img set - Copy (2)_26: 1715212891
+      Snake img set - Copy (2)_40: -1096825720
+      Snake img set - Copy (2)_29: 526679962
+      Snake img set - Copy (2)_8: 1711965890
+      Snake img set - Copy (2)_36: -1787280219
+      Snake img set - Copy (2)_5: -1110107180
+      Snake img set - Copy (2)_30: -1480285142
+      Snake img set - Copy (2)_41: -2060577929
+      Snake img set - Copy (2)_35: 1504929045
+      Snake img set - Copy (2)_38: 1491818728
+      Snake img set - Copy (2)_17: -1539349427
+      Snake img set - Copy (2)_31: 2039388772
+      Snake img set - Copy (2)_23: -903279978
+      Snake img set - Copy (2)_3: 1400592545
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
