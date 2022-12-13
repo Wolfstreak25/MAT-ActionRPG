@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private GameObject CollectiblePrefab;
     Animator animator;
 
     public float Health {
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
 
     public void Defeated(){
         animator.SetTrigger("Death");
+        Instantiate(CollectiblePrefab, transform.position, Quaternion.identity);
     }
 
     public void RemoveEnemy() {
