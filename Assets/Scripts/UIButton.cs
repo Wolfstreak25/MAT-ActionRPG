@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
  
-public class Example : MonoBehaviour {
+public class UIButton : MonoBehaviour {
    //The UI Button we want to programmatically click.
-   public Button button;
+   [SerializeField] private Button button;
+   [SerializeField] private string KeyInput;
  
    void Update() {
       //Check if the Enter key has been pressed.

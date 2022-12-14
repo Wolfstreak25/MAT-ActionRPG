@@ -5,17 +5,21 @@ using UnityEngine.UI;
 using TMPro;
 public class NPC : MonoBehaviour
 {
-    public GameObject DialoguePanel;
-    public GameObject ContButton;
-    public TMP_Text Dialoguetext;
-    public string[] Dialogue;
+    [SerializeField] private GameObject UICamera;
+    [SerializeField] private GameObject MainCamera;
+    [SerializeField] private GameObject HoverKey;
+    [SerializeField] private GameObject DialoguePanel;
+    [SerializeField] private GameObject ContButton;
+    [SerializeField] private TMP_Text Dialoguetext;
+    [SerializeField] private string[] Dialogue;
+    [SerializeField] private float wordSpeed;
+    private bool PlayerInRange;
     private int Index;
-    public float wordSpeed;
-    public bool PlayerInRange;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)&& PlayerInRange)
         {
+            HoverKey.SetActive(false);
             if(DialoguePanel.activeInHierarchy)
             {
                 Zerotext();
@@ -59,7 +63,10 @@ public class NPC : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("NPC Detected");
         if (other.CompareTag("Player"))
-        {
+        {   
+            MainCamera.SetActive(false);
+            UICamera.SetActive(true);
+            HoverKey.SetActive(true);
             PlayerInRange = true;
         }
     }
@@ -67,6 +74,9 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("NPC Out of Range");
+            UICamera.SetActive(false);
+            MainCamera.SetActive(true);
+            HoverKey.SetActive(false);
             PlayerInRange = false;
             Zerotext();
         }

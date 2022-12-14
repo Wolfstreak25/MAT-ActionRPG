@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1239,8 +1239,8 @@ TextureImporter:
       playerFlipped_44: -777737408
       playerFlipped_23: 567218810
       playerFlipped_18: 329695998
-      playerFlipped_39: -1020272092
       playerFlipped_35: 1624662960
+      playerFlipped_39: -1020272092
       playerFlipped_41: -665346344
       playerFlipped_2: -588158094
       playerFlipped_29: 263146455
