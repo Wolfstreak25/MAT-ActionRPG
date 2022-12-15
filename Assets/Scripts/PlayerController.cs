@@ -9,10 +9,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb; 
     Animator animator;
     SpriteRenderer spriteRenderer;
-    public float moveSpeed = 1f;
-    public float collisionOffset = 0.02f;
-    public ContactFilter2D movementFilter;
-    public SwordAttack SwordHit;
+    public int Health;
+    public int Experiance;
+    public int Gold;
+    public Quest quest;
+    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float collisionOffset = 0.02f;
+    [SerializeField] private ContactFilter2D movementFilter;
+    [SerializeField] private SwordAttack SwordHit;
     bool canMove = true;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     void Start()
@@ -92,4 +96,33 @@ public class PlayerController : MonoBehaviour
         SwordHit.StopAttack();
     }
 
+    public void Killed()
+    {
+        if(quest.isActive)
+        {
+            quest.goal.EnemyKilled();
+            Debug.Log("Player Killed called");
+            if(quest.goal.IsReached())
+            {
+                Experiance += quest.ExperienceReward;
+                Gold += quest.GoldReward;
+                quest.complete();
+            }
+        }
+    }
+    public void Collected()
+    {
+        
+        if(quest.isActive)
+        {
+            Debug.Log("Player collected called");
+            quest.goal.ItemCollected();
+            if(quest.goal.IsReached())
+            {
+                Experiance += quest.ExperienceReward;
+                Gold += quest.GoldReward;
+                quest.complete();
+            }
+        }
+    }
 }

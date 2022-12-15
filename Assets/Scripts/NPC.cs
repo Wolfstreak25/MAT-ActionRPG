@@ -5,16 +5,28 @@ using UnityEngine.UI;
 using TMPro;
 public class NPC : MonoBehaviour
 {
+    private bool PlayerInRange;
+    private int Index;
+    //Dialogue Pannel
     [SerializeField] private GameObject UICamera;
     [SerializeField] private GameObject MainCamera;
     [SerializeField] private GameObject HoverKey;
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private GameObject ContButton;
+    [SerializeField] private GameObject Questbutton;
     [SerializeField] private TMP_Text Dialoguetext;
     [SerializeField] private string[] Dialogue;
     [SerializeField] private float wordSpeed;
-    private bool PlayerInRange;
-    private int Index;
+
+    //Quest Pannel
+    public Quest quest;
+    public PlayerController player;
+    [SerializeField] private GameObject QuestWindow;
+    [SerializeField] private TMP_Text QuestTitle;
+    [SerializeField] private TMP_Text QuestDescription;
+    [SerializeField] private TMP_Text RewardGold;
+    [SerializeField] private TMP_Text RewardExperience;
+    
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)&& PlayerInRange)
@@ -80,5 +92,20 @@ public class NPC : MonoBehaviour
             PlayerInRange = false;
             Zerotext();
         }
+    }
+    public void OpenQuestWindow(){
+        DialoguePanel.SetActive(false);
+        QuestWindow.SetActive(true);
+        QuestTitle.text=quest.Title;
+        QuestDescription.text= quest.Description;
+        RewardGold.text=quest.GoldReward.ToString();
+        RewardExperience.text= quest.ExperienceReward.ToString();
+
+    }
+    public void AcceptQuest()
+    {
+        QuestWindow.SetActive(false);
+        quest.isActive = true;
+        player.quest = quest;
     }
 }
