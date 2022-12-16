@@ -18,6 +18,7 @@ public class Inventory_UI : MonoBehaviour
     }
     public void ToggleInventory()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         if(!InventoryPannel.activeSelf)
         {
             InventoryPannel.SetActive(true);

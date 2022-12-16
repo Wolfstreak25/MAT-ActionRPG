@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,17 +10,23 @@ public class Quest
     public string Description;
     public int GoldReward;
     public int ExperienceReward;
-    [SerializeField] private GameObject RewardButton;
-    [SerializeField] private GameObject Acceptbutton;
-    [SerializeField] private GameObject QuestComplete;
+    public GameObject QuestComplete;
+    public GameObject RewardButton;
+    public GameObject AcceptButton;
     public QuestGoal goal;
-    public bool complete() {
+    public void complete() {
+        SoundManager.Instance.Play(Sounds.Complete);
         isActive = false;
         Debug.Log(Title +" is Completed");
-        Acceptbutton.SetActive(false);
         RewardButton.SetActive(true);
-
-        return(true);
+        AcceptButton.SetActive(false);
     }
-
+    public IEnumerator CompletionMessage()
+    {
+        Debug.Log("Coroutine called");
+        QuestComplete.SetActive(true);
+        yield return new WaitForSeconds(5.0f);
+        QuestComplete.SetActive(false);
+    }
 }
+   

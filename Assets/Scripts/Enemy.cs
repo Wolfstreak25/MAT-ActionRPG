@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void Defeated(){
+        SoundManager.Instance.Play(Sounds.EnemyKill);
         animator.SetTrigger("Death");
         Debug.Log("Enemy killed");
         player.Killed();

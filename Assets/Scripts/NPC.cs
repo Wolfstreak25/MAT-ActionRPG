@@ -8,8 +8,6 @@ public class NPC : MonoBehaviour
     private bool PlayerInRange;
     private int Index;
     //Dialogue Pannel
-    [SerializeField] private GameObject UICamera;
-    [SerializeField] private GameObject MainCamera;
     [SerializeField] private GameObject HoverKey;
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private GameObject ContButton;
@@ -41,9 +39,23 @@ public class NPC : MonoBehaviour
                 StartCoroutine(Typing());
             }
         }
-        if(Dialoguetext.text == Dialogue[Index])
+        if(quest.goal.IsReached())
+        {
+            Questbutton.SetActive(true);
+            Index = 7;
+            Typing();
+        }
+        else if(Dialoguetext.text == Dialogue[6])
+        {
+            Questbutton.SetActive(true);
+        }
+        else if(Dialoguetext.text == Dialogue[Index])
         {
             ContButton.SetActive(true);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseQuestWindow();
         }
     }
     public void Zerotext()
@@ -62,8 +74,9 @@ public class NPC : MonoBehaviour
     }
     public void NextLine()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         ContButton.SetActive(false);
-        if(Index < Dialogue.Length - 1)
+        if(Index < Dialogue.Length - 2)
         {
             Index++;
             Dialoguetext.text="";
@@ -77,8 +90,6 @@ public class NPC : MonoBehaviour
         Debug.Log("NPC Detected");
         if (other.CompareTag("Player"))
         {   
-            MainCamera.SetActive(false);
-            UICamera.SetActive(true);
             HoverKey.SetActive(true);
             PlayerInRange = true;
         }
@@ -87,8 +98,6 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("NPC Out of Range");
-            UICamera.SetActive(false);
-            MainCamera.SetActive(true);
             HoverKey.SetActive(false);
             PlayerInRange = false;
             Zerotext();
@@ -96,18 +105,41 @@ public class NPC : MonoBehaviour
     }
     public void OpenQuestWindow()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
+        Debug.Log("open Quest Window Called");
         DialoguePanel.SetActive(false);
         QuestWindow.SetActive(true);
         QuestTitle.text=quest.Title;
         QuestDescription.text= quest.Description;
         RewardGold.text=quest.GoldReward.ToString();
         RewardExperience.text= quest.ExperienceReward.ToString();
-    }
+        if(quest.goal.IsReached())
+        {QuestDescription.text = "Thank you Adventurer for your help. please take this reward for your trouble";}
+    }   
     public void AcceptQuest()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         Debug.Log("Accept Quest called");
         QuestWindow.SetActive(false);
         quest.isActive = true;
         player.quest = quest;
+    }
+    public void QuestReward()
+    {
+        SoundManager.Instance.Play(Sounds.PickObject);
+        player.Gold += quest.GoldReward;
+        player.Experiance += quest.ExperienceReward;
+        Questbutton.SetActive(false);
+        RewardButton.SetActive(false);
+    }
+    public void CloseQuestWindow()
+    {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
+        QuestWindow.SetActive(false);
+    }
+    public void CloseDialogueWindow()
+    {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
+        DialoguePanel.SetActive(false);
     }
 }

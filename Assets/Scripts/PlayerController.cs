@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
     }
     public void MovementLocked()
     {
+        SoundManager.Instance.Play(Sounds.Attack);
         canMove = false;
         SwordHit.Attack();
     }
@@ -108,14 +109,14 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player Killed called");
             if(quest.goal.IsReached())
             {
-                Experiance += quest.ExperienceReward;
-                Gold += quest.GoldReward;
+                StartCoroutine(quest.CompletionMessage());
                 quest.complete();
             }
         }
     }
     public void Collected(EnemyCollectible Item)
     {
+        SoundManager.Instance.Play(Sounds.PickObject);
         Debug.Log("Collected called");
         inventory.Add(Item);
         if(quest.isActive)
@@ -124,8 +125,7 @@ public class PlayerController : MonoBehaviour
             quest.goal.ItemCollected();
             if(quest.goal.IsReached())
             {
-                Experiance += quest.ExperienceReward;
-                Gold += quest.GoldReward;
+                StartCoroutine(quest.CompletionMessage());
                 quest.complete();
             }
         }

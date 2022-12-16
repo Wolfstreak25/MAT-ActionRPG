@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3814,10 +3814,10 @@ TextureImporter:
       tileset_16x16_final_1_94: 826818623
       tileset_16x16_final_1_104: 1757387958
       tileset_16x16_final_1_134: -413824772
-      tileset_16x16_final_1_126: 1451130808
       tileset_16x16_final_1_150: -253364671
       tileset_16x16_final_1_38: -446214846
       tileset_16x16_final_1_28: 1436271708
+      tileset_16x16_final_1_126: 1451130808
       tileset_16x16_final_1_158: -1973120410
       tileset_16x16_final_1_74: 272629595
       tileset_16x16_final_1_85: -1941942440
@@ -3899,8 +3899,8 @@ TextureImporter:
       tileset_16x16_final_1_39: -2009654814
       tileset_16x16_final_1_102: -746490460
       tileset_16x16_final_1_80: -283136582
-      tileset_16x16_final_1_88: 390444204
       tileset_16x16_final_1_98: -386518758
+      tileset_16x16_final_1_88: 390444204
       tileset_16x16_final_1_141: 240551485
       tileset_16x16_final_1_20: 515826516
       tileset_16x16_final_1_23: 503487663
