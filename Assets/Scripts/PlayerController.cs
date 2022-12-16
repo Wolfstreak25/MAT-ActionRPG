@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     bool canMove = true;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private void Awake() {
-        inventory = new Inventory(5);
+        inventory = new Inventory(11);
     }
     void Start()
     {
@@ -116,8 +116,8 @@ public class PlayerController : MonoBehaviour
     }
     public void Collected(EnemyCollectible Item)
     {
-        inventory.Add(Item);
         Debug.Log("Collected called");
+        inventory.Add(Item);
         if(quest.isActive)
         {
             Debug.Log("Player collected called");

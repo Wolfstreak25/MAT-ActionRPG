@@ -9,11 +9,17 @@ public class Quest
     public string Description;
     public int GoldReward;
     public int ExperienceReward;
+    [SerializeField] private GameObject RewardButton;
+    [SerializeField] private GameObject Acceptbutton;
+    [SerializeField] private GameObject QuestComplete;
     public QuestGoal goal;
-    public void complete() {
+    public bool complete() {
         isActive = false;
         Debug.Log(Title +" is Completed");
+        Acceptbutton.SetActive(false);
+        RewardButton.SetActive(true);
 
+        return(true);
     }
 
 }

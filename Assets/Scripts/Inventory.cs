@@ -45,6 +45,7 @@ public class Inventory
     }
     public void Add(EnemyCollectible Item)
     {
+        Debug.Log(" Inventory Add called");
         foreach (InventorySlot slot in slots)
         {
             if(slot.type == Item.type && slot.CanAddItem())

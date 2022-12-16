@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     [SerializeField] private GameObject HoverKey;
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private GameObject ContButton;
+    [SerializeField] private GameObject RewardButton;
     [SerializeField] private GameObject Questbutton;
     [SerializeField] private TMP_Text Dialoguetext;
     [SerializeField] private string[] Dialogue;
@@ -93,17 +94,18 @@ public class NPC : MonoBehaviour
             Zerotext();
         }
     }
-    public void OpenQuestWindow(){
+    public void OpenQuestWindow()
+    {
         DialoguePanel.SetActive(false);
         QuestWindow.SetActive(true);
         QuestTitle.text=quest.Title;
         QuestDescription.text= quest.Description;
         RewardGold.text=quest.GoldReward.ToString();
         RewardExperience.text= quest.ExperienceReward.ToString();
-
     }
     public void AcceptQuest()
     {
+        Debug.Log("Accept Quest called");
         QuestWindow.SetActive(false);
         quest.isActive = true;
         player.quest = quest;

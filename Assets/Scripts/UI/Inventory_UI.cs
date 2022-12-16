@@ -28,14 +28,19 @@ public class Inventory_UI : MonoBehaviour
     }
     void Setup()
     {
+        Debug.Log("Inventory_UI Setup called");
+        Debug.Log("UI slots = " + slots.Count + "Player inventory slots = " + player.inventory.slots.Count);
         if(slots.Count == player.inventory.slots.Count)
         {
+            
             for(int i= 0; i< slots.Count; i++)
             {
                 if(player.inventory.slots[i].type != CollectibleType.none)
                 {
+                    Debug.Log("setup>>forloop>>if_statement>>true");
                     slots[i].SetItem(player.inventory.slots[i]);
                 }else{
+                    Debug.Log("setup>>forloop>>if_statement>>false");
                     slots[i].SetEmpty();
                 }
             }
