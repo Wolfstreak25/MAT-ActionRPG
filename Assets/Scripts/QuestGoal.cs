@@ -17,7 +17,7 @@ public class QuestGoal
         Debug.Log("QuestGoal Enemy Killed called");
         if(goalType == GoalType.KillQuest)
         {
-            CurrentAmmount =+ 1;
+            CurrentAmmount ++;
         }
     }
     public void ItemCollected()
@@ -25,7 +25,7 @@ public class QuestGoal
         Debug.Log("QuestGoal Item Collected called");
         if(goalType == GoalType.Gathering)
         {
-            CurrentAmmount =+ 1;
+            CurrentAmmount ++;
         }
     }
 }

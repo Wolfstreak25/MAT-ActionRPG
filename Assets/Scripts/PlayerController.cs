@@ -13,12 +13,16 @@ public class PlayerController : MonoBehaviour
     public int Experiance;
     public int Gold;
     public Quest quest;
+    public Inventory inventory;
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float collisionOffset = 0.02f;
     [SerializeField] private ContactFilter2D movementFilter;
     [SerializeField] private SwordAttack SwordHit;
     bool canMove = true;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    private void Awake() {
+        inventory = new Inventory(5);
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -110,9 +114,10 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    public void Collected()
+    public void Collected(EnemyCollectible Item)
     {
-        
+        inventory.Add(Item);
+        Debug.Log("Collected called");
         if(quest.isActive)
         {
             Debug.Log("Player collected called");

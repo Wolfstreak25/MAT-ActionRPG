@@ -167,4 +167,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae169ceca01d4e640a9f2134217b3b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 334162424471726349, guid: 467cf3841fddc594aa1d6be95656c0ce, type: 3}
+  type: 1
+  Icon: {fileID: 1923972934, guid: b28caaf9df13e5c41994aff4ec4bed77, type: 3}

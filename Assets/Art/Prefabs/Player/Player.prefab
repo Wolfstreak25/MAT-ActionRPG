@@ -303,6 +303,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d13ac56027241345a8d65670b6ac7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 0
+  Experiance: 0
+  Gold: 0
+  quest:
+    isActive: 0
+    Title: 
+    Description: 
+    GoldReward: 0
+    ExperienceReward: 0
+    goal:
+      goalType: 0
+      RequiredAmmount: 0
+      CurrentAmmount: 0
+  inventory:
+    slots:
+    - type: 0
+      count: 0
+      maxAllowed: 0
+    - type: 0
+      count: 0
+      maxAllowed: 0
   moveSpeed: 10
   collisionOffset: 0.02
   movementFilter:
