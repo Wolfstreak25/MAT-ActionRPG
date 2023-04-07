@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2025134444094639073}
   - component: {fileID: 5663631455429642915}
   - component: {fileID: 2467952836227435079}
-  - component: {fileID: 3886346052806964477}
   - component: {fileID: -2696810015785765478}
   - component: {fileID: 2412929455717390831}
+  - component: {fileID: 6232690897328994179}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -104,24 +104,9 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.08209557}
   serializedVersion: 2
   m_Radius: 0.33058655
---- !u!114 &3886346052806964477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7081563058833597784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ba43105505e4bf4ea6b7dcce9c2624e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  CollectiblePrefab: {fileID: 2497872626063492076, guid: 3e280a5b411f4b344a3993b42595cc4e, type: 3}
-  health: 2
 --- !u!95 &-2696810015785765478
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -138,7 +123,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &2412929455717390831
 Rigidbody2D:
   serializedVersion: 4
@@ -160,3 +146,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6232690897328994179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081563058833597784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c83be432fa8b644c9d234865931e070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_barrel: {fileID: 0}
