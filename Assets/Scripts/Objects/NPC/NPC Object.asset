@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 781ebbd5e6965d64b812d861fcc0c54e, type: 3}
+  m_Name: NPC Object
+  m_EditorClassIdentifier: 
+  objectType: 2
+  View: {fileID: 8786054810547696347, guid: 9ba615c7e42cea64eb101495ebe640df, type: 3}
+  npcType: 0
+  dialogueObject: {fileID: 11400000, guid: c41ab071fb5b06c47bedf7292251162e, type: 2}
+  questObject: {fileID: 11400000, guid: 07f6a1e162321104ba43ccbbb8df6801, type: 2}

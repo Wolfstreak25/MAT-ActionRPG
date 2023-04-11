@@ -8,5 +8,6 @@ public class LevelManager : Singleton<LevelManager>
     {
         PlayerService.Instance.Spawn();
         EnemyService.Instance.Spawn();
+        NPCService.Instance.Spawn();
     }
 }

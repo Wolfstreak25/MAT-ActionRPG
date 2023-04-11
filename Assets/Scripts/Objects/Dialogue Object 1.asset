@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b88df562387d2c42854bc31a03e56c3, type: 3}
-  m_Name: SlimeBase
+  m_Script: {fileID: 11500000, guid: 1f8ff75c6bb564e4eab7e5182a0f661e, type: 3}
+  m_Name: Dialogue Object 1
   m_EditorClassIdentifier: 
-  View: {fileID: 3786644834891719889, guid: f90eae557f6feea49b649a1247b80b87, type: 3}
-  EnemyType: 0
-  Speed: 0
-  Health: 0
-  Damage: 0
-  EngageRadius: 0
-  AttackRadius: 0
-  attackDelay: 0
+  npcType: 1
+  objectType: 0
+  greetingText: hi there
+  problemQuestText: go there
+  giveQuestText: not here
+  midQuestText: here here
+  postQuestText: yo yo

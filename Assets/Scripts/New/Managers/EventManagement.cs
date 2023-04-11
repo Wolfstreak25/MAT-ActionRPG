@@ -1,19 +1,29 @@
 using System;
 public class EventManagement : Singleton<EventManagement>
 {
-    public event Action OnEnemyDeath;
+    public event Action<EnemyType> OnEnemyDeath;
     public event Action OnPlayerDeath;
-    public event Action<int> OnWaveComplete;
+    public event Action<QuestController> OnQuestAccepted;
+    public event Action<QuestController> OnQuestCompleted;
+    public event Action<int,int> OnRewardCollected; 
     public void PlayerDeath()
     {
         OnPlayerDeath?.Invoke();
     }
-    public void EnemyDeath()
+    public void EnemyDeath(EnemyType _type)
     {
-        OnEnemyDeath?.Invoke();
+        OnEnemyDeath?.Invoke(_type);
     }
-    public void WaveComplete(int wave)
+    public void QuestCompleted(QuestController _questController)
     {
-        OnWaveComplete?.Invoke(wave);
+        OnQuestCompleted?.Invoke(_questController);
+    }
+    public void QuestAccepted(QuestController _questController)
+    {
+        OnQuestAccepted?.Invoke(_questController);
+    }
+    public void RewardCollected(int _gold, int _experience)
+    {
+        OnRewardCollected?.Invoke(_gold, _experience);
     }
 }

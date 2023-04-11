@@ -17,9 +17,10 @@ public class PlayerController
     private Vector2 m_movement; 
     private Vector2 m_direction;
     private Rigidbody2D m_rigidBody;
-    
+    private QuestController m_questController;
     public PlayerController(PlayerModel _playerModel, PlayerView _playerView)
     {
+        EventManagement.Instance.OnQuestAccepted += QuestAccepted;
         this.Model = _playerModel;
         View = GameObject.Instantiate<PlayerView>(_playerView);
         m_rigidBody = View.GetComponent<Rigidbody2D>();
@@ -53,10 +54,25 @@ public class PlayerController
             return ;
         }
     }
-    public void Turn()
+    private void QuestAccepted(QuestController _questController)
     {
+        m_questController = _questController;
+    }
+    private void OnItemCollected()
+    {
+        if(m_questController != null)
+            m_questController.ItemCollected();
+    }
+    private void OnEnemyKilled()
+    {
+        if(m_questController != null)
+            m_questController.EnemyKilled();
     }
     public void GetDamage(float damage)
     {
+    }
+    private void OnDisable() 
+    {
+        EventManagement.Instance.OnQuestAccepted -= QuestAccepted;
     }
 }

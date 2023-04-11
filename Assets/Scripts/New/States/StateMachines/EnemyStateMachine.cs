@@ -1,56 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Pool;
 public class EnemyStateMachine : StateInterface<EnemyController>
 {
-    protected float timeElapsed = 0f;
-    protected EnemyController enemy;
-    protected NavMeshAgent agent;
-    protected Animator Anim;
-    private EnemyStateMachine currentState;
-    private StateMachine<EnemyController> stateMachine;
-    private EnemyState currState;
+    protected EnemyController m_character;
+    protected Rigidbody2D m_rigidBody;
+    protected Animator m_animator;
+    private EnemyStateMachine m_currentState;
+    private StateMachine<EnemyController> m_stateMachine;
+    private EnemyState m_thisState;
     private void Start() 
     {
-        stateMachine = new StateMachine<EnemyController>(enemy);
+        m_stateMachine = new StateMachine<EnemyController>(m_character);
     }
-    protected void ObjectInitialization(EnemyController stateObject)
+    protected void ObjectInitialization(EnemyController _character)
     {
+        m_character = _character;
+        m_rigidBody = m_character.rigidBody;
     }
-    public override void OnEnterState(EnemyController ObjectState)
+    public override void OnEnterState(EnemyController _character)
     {
-        ObjectInitialization(ObjectState);
+        // Debug.Log("StateEnemy");
+        ObjectInitialization(_character);
     }
-    public  override void OnExitState(EnemyController ObjectState)
+    public  override void OnExitState(EnemyController _objectState)
     {
-        if(currentState != null)
+        if(m_currentState != null)
         {
-            GenericPool<EnemyStateMachine>.Release(currentState);
+            GenericPool<EnemyStateMachine>.Release(m_currentState);
         }
         
     }
-    public void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState _newState)
     {
-        switch(newState)
+        switch(_newState)
         {
             case EnemyState.IdleState:
-                currentState = GenericPool<EnemyIdleState>.Get();
+                m_currentState = GenericPool<EnemyIdleState>.Get();
                 break;
             case EnemyState.PatrolState:
-                currentState = GenericPool<EnemyPatrolState>.Get();
+                m_currentState = GenericPool<EnemyPatrolState>.Get();
                 break;
             case EnemyState.ChaseState:
-                currentState = GenericPool<EnemyChaseState>.Get();
+                m_currentState = GenericPool<EnemyChaseState>.Get();
                 break;
             case EnemyState.AttackState:
-                currentState = GenericPool<EnemyAttackState>.Get();
+                m_currentState = GenericPool<EnemyAttackState>.Get();
                 break;
             case EnemyState.DeathState:
-                currentState = GenericPool<EnemyDeathState>.Get();
+                m_currentState = GenericPool<EnemyDeathState>.Get();
                 break;
         }
-        stateMachine.ChangeState(currentState);
+        m_character.m_stateMachine.ChangeState(m_currentState);
     }
 }

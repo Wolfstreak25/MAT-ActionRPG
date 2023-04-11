@@ -13,6 +13,7 @@ public class StateMachine<T>
     }
     public void ChangeState(StateInterface<T> NewState)
     {
+        // Debug.Log("ChangeState");
         CurrentState?.OnExitState(ObjectState);
         CurrentState = NewState;
         CurrentState?.OnEnterState(ObjectState);
