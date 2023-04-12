@@ -10,4 +10,9 @@ public class EnemyService : Singleton<EnemyService>
         EnemyModel m_enemyModel = new EnemyModel(m_enemyObject);
         EnemyController m_controller = new EnemyController(m_enemyModel, m_enemyObject.View);
     }
+    public void Spawn(Transform _spawn)
+    {
+        EnemyModel m_enemyModel = new EnemyModel(m_enemyObject);
+        EnemyController m_controller = new EnemyController(m_enemyModel, m_enemyObject.View,_spawn);
+    }
 }

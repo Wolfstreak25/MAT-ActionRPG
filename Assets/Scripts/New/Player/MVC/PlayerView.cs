@@ -7,6 +7,7 @@ public class PlayerView : MonoBehaviour
 {
     //Serializables
     [SerializeField] private Rigidbody2D m_rigidBody;
+    public bool isQuestActive;
     [SerializeField] private ContactFilter2D m_movementFilter;
     //Properties
     public Animator PlayerAnimator{ get{    return this.gameObject.GetComponent<Animator>();    }   }

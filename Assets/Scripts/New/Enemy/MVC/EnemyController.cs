@@ -22,6 +22,16 @@ public class EnemyController
         this.Model.SetController(this);
         SetActive();
     }
+    public EnemyController(EnemyModel _enemyModel, EnemyView _view, Transform _spawn)
+    {
+        m_stateMachine = new StateMachine<EnemyController>(this);
+        IsKilled = false;
+        this.Model = _enemyModel;
+        View = GameObject.Instantiate<EnemyView>(_view, _spawn.position , Quaternion.identity);
+        this.View.SetController(this);
+        this.Model.SetController(this);
+        SetActive();
+    }
     public void SetActive()
     {
         // Debug.Log("setActive");

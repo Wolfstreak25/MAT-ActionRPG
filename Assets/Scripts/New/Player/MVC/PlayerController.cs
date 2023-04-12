@@ -18,14 +18,23 @@ public class PlayerController
     private Vector2 m_direction;
     private Rigidbody2D m_rigidBody;
     private QuestController m_questController;
-    public PlayerController(PlayerModel _playerModel, PlayerView _playerView)
+    public PlayerController(PlayerModel _playerModel, PlayerView _playerView, Transform _spawn)
     {
         EventManagement.Instance.OnQuestAccepted += QuestAccepted;
         this.Model = _playerModel;
-        View = GameObject.Instantiate<PlayerView>(_playerView);
+        View = GameObject.Instantiate<PlayerView>(_playerView, _spawn.position, Quaternion.identity);
         m_rigidBody = View.GetComponent<Rigidbody2D>();
         this.View.SetController(this);
         this.Model.SetController(this);
+    }
+    public PlayerController(PlayerModel _playerModel, PlayerView _playerView)
+    {
+        // EventManagement.Instance.OnQuestAccepted += QuestAccepted;
+        // this.Model = _playerModel;
+        // View = GameObject.Instantiate<PlayerView>(_playerView);
+        // m_rigidBody = View.GetComponent<Rigidbody2D>();
+        // this.View.SetController(this);
+        // this.Model.SetController(this);
     }
     public void Attack()
     {
@@ -57,6 +66,7 @@ public class PlayerController
     private void QuestAccepted(QuestController _questController)
     {
         m_questController = _questController;
+        View.isQuestActive = true;
     }
     private void OnItemCollected()
     {

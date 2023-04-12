@@ -24,6 +24,14 @@ public class NPController
         this.Model.SetController(this);
         m_questController = GenerateQuest();
     }
+    public NPController(NPModel _model, NPView _view, Transform _spawn)
+    {
+        this.Model = _model;
+        View = GameObject.Instantiate<NPView>(_view, _spawn.position , Quaternion.identity);
+        this.View.SetController(this);
+        this.Model.SetController(this);
+        m_questController = GenerateQuest();
+    }
     // Show Dialogue panel
     public void ShowDialogue()
     {

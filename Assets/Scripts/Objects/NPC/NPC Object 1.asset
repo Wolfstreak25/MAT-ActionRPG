@@ -15,5 +15,5 @@ MonoBehaviour:
   objectType: 4
   View: {fileID: 8786054810547696347, guid: 9ba615c7e42cea64eb101495ebe640df, type: 3}
   npcType: 1
-  dialogueObject: {fileID: 0}
-  questObject: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: 483a76bc9c59a3845ae182bff5a9a9f7, type: 2}
+  questObject: {fileID: 11400000, guid: 07f6a1e162321104ba43ccbbb8df6801, type: 2}
